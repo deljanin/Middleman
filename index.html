@@ -15,9 +15,11 @@
     div{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         height: 100vh;
-        display: grid;
-        place-content: center;
+        display: flex;
         text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: #29292f;
         color: aqua;
     }
@@ -26,7 +28,7 @@
     }
     button{
         margin-top: 1.5rem;
-
+        width: 220px;
         font-size: 1.2rem;
         padding: 1rem 2.5rem;
         border: none;
@@ -57,7 +59,7 @@
         <h1>Hello!</h1>
         <h3>The button below will take you to my REST API project. <br/>
             I kindly ask you to wait for the app to load as it's waking up from a deep sleep.</h3>
-        <a href="https://springrestapp.deljanin.dev/swagger-ui/index.html"><button>API wake up!</button></a>
+        <button><a href="https://springrestapp.deljanin.dev/swagger-ui/index.html"></a>API wake up!</a></button>
     </div>
 
 </body>
