@@ -29,7 +29,7 @@
     h1{
         margin-bottom: 0.4rem;
     }
-    button{
+    .mainBtn{
         margin-top: 1.5rem;
         width: 220px;
         font-size: 1.2rem;
@@ -47,14 +47,24 @@
         -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
     }
 
-    button:active {
+    .mainBtn:active {
     scale: 0.92;
     }
 
-    button:hover {
+    .mainBtn:hover {
         background: rgb(2,29,78);
         background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 50%);
         color: rgb(4, 4, 38);
+    }
+    #link{
+        text-decoration: underline;
+        color: rgba(31, 215, 232, 0.873);
+        cursor: pointer;
+        transition: 0.65s;
+    }
+    #link:hover{
+        color: rgb(2,29,78);
+        
     }
 </style>
 <body>
@@ -62,7 +72,9 @@
         <h1>Hello!</h1>
         <h3>The button below will take you to my REST API project. <br/>
             I kindly ask you to wait for the app to load as it may need to wake up from a deep sleep.</h3>
-        <button><a href="https://springrestapp.deljanin.dev/swagger-ui/index.html">API wake up!</a></button>
+        <h3>After clicking the button, the loading may take up to 5 minutes.<br/> 
+            In the meantime, you can explore my other projects at <a id="link" target="_blank" href="https://deljanin.dev">deljanin.dev</a>.</h3>
+            <a target="_blank" href="https://springrestapp.deljanin.dev/swagger-ui/index.html"><button class="mainBtn">API wake up!</button></a>
     </div>
 
 </body>
