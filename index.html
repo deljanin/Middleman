@@ -1,81 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <link rel="icon" type="image/ico" href="/favicon.ico" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="refresh"
+      content="0;url=https://springrestapp.deljanin.dev/swagger-ui/index.html" />
     <title>Petar Deljanin | Middleman page</title>
-</head>
-<style>
-    *{
-        margin: unset;
-        padding: unset;
+  </head>
+  <style>
+    * {
+      margin: unset;
+      padding: unset;
     }
-    a{
-        all: unset;
+    a {
+      all: unset;
     }
-    div{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        height: 100vh;
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #29292f;
-        color: aqua;
+    div {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      height: 100vh;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #29292f;
+      color: aqua;
     }
-    h1{
-        margin-bottom: 0.4rem;
+    h1 {
+      margin-bottom: 0.4rem;
     }
-    .mainBtn{
-        margin-top: 1.5rem;
-        width: 220px;
-        font-size: 1.2rem;
-        padding: 1rem 2.5rem;
-        border: none;
-        outline: none;
-        border-radius: 0.4rem;
-        cursor: pointer;
-        text-transform: uppercase;
-        background-color: rgb(14, 14, 26);
-        color: rgb(234, 234, 234);
-        font-weight: 700;
-        transition: 0.8s;
-        box-shadow: 0px 0px 60px #1f4c65;
-        -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+    .mainBtn {
+      margin-top: 1.5rem;
+      width: 220px;
+      font-size: 1.2rem;
+      padding: 1rem 2.5rem;
+      border: none;
+      outline: none;
+      border-radius: 0.4rem;
+      cursor: pointer;
+      text-transform: uppercase;
+      background-color: rgb(14, 14, 26);
+      color: rgb(234, 234, 234);
+      font-weight: 700;
+      transition: 0.8s;
+      box-shadow: 0px 0px 60px #1f4c65;
+      -webkit-box-reflect: below 10px
+        linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
     }
 
     .mainBtn:active {
-    scale: 0.92;
+      scale: 0.92;
     }
 
     .mainBtn:hover {
-        background: rgb(2,29,78);
-        background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 50%);
-        color: rgb(4, 4, 38);
+      background: rgb(2, 29, 78);
+      background: linear-gradient(
+        270deg,
+        rgba(2, 29, 78, 0.681) 0%,
+        rgba(31, 215, 232, 0.873) 50%
+      );
+      color: rgb(4, 4, 38);
     }
-    #link{
-        text-decoration: underline;
-        color: rgba(31, 215, 232, 0.873);
-        cursor: pointer;
-        transition: 0.65s;
-    }
-    #link:hover{
-        color: rgb(2,29,78);
-        
-    }
-</style>
-<body>
+  </style>
+  <body>
     <div>
-        <h1>Hello!</h1>
-        <h3>The button below will take you to my REST API project. <br/>
-            I kindly ask you to wait for the app to load as it may need to wake up from a deep sleep.</h3>
-        <h3>After clicking the button, the loading may take up to 5 minutes.<br/> 
-            In the meantime, you can explore my other projects at <a id="link" target="_blank" href="https://deljanin.dev">deljanin.dev</a>.</h3>
-            <a target="_blank" href="https://springrestapp.deljanin.dev/swagger-ui/index.html"><button class="mainBtn">API wake up!</button></a>
+      <h1>If you are not redirected, click the button below.</h1>
+      <a
+        target="_blank"
+        href="https://springrestapp.deljanin.dev/swagger-ui/index.html"
+        ><button class="mainBtn">The button</button></a
+      >
     </div>
-
-</body>
+  </body>
 </html>
